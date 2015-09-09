@@ -50,5 +50,36 @@ font-family: Arial, light, sans-serif;">
 
 </ul>
 </div>
+<div style="border: 2px solid #93939f;
+margin: 5px;
+padding : 5px;
+
+color: #ffffff;
+font-family:Tahoma;">
+<h4> My favourite place is Basma hotel  </h2>
+ <head>
+    <style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      #map { height: 100%; }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script type="text/javascript">
+
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 26.14707864, lng: 32.7120173},
+    zoom: 8
+  });
+}
+
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDByv_Bjz4oGI9EAgKV7zKaGlKq9ISZyKg &callback=initMap">
+    </script>
+  </body>
+</html>
 </body>
 </html>
