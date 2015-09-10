@@ -56,41 +56,49 @@ padding : 5px;
 
 color: #ffffff;
 font-family:Tahoma;">
-<h4> My favourite place is partner tut  Assiut </h4>
- <script
-src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDByv_Bjz4oGI9EAgKV7zKaGlKq9ISZyKg">
-
-</script>
-
+<h4> My favourite place is partner tut  </h4>
+ <script src="http://maps.googleapis.com/maps/api/js"></script>
 <script>
-var myCenter=new google.maps.LatLng(27.18292097,31.19726121);
-
-function initialize()
-{
-var mapProp = {
-  center:myCenter,
-  zoom:15,
-  mapTypeId:google.maps.MapTypeId.ROADMAP
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(26.14707864,-32.7120173),
+    zoom:5,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
   };
-
-var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-var marker=new google.maps.Marker({
-  position:myCenter,
-  });
-
-marker.setMap(map);
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
-
 google.maps.event.addDomListener(window, 'load', initialize);
 </script>
-</head>
 </head>
 
 <body>
 <div id="googleMap" style="width:500px;height:380px;"></div>
 
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDByv_Bjz4oGI9EAgKV7zKaGlKq9ISZyKg "></script> 
+  </body>
 </html>
-</body>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(27.18292097.31.19726121),
+    zoom:14,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<div id="googleMap" style="width:500px;height:380px;"></div>
+
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDByv_Bjz4oGI9EAgKV7zKaGlKq9ISZyKg "></script> 
+  </body>
 </html>
