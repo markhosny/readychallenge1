@@ -56,20 +56,35 @@ padding : 5px;
 
 color: #ffffff;
 font-family:Tahoma;">
-<h4> My favourite place is Basma hotel  </h2>
+<h4> My favourite place is partner tut  Assiut </h4>
+ <script
+src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDByv_Bjz4oGI9EAgKV7zKaGlKq9ISZyKg">
 
-<script src="http://maps.googleapis.com/maps/api/js"></script>
+</script>
+
 <script>
-function initialize() {
-  var mapProp = {
-    center:new google.maps.LatLng(27.18292097,31.19726121),
-    zoom:8,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
+var myCenter=new google.maps.LatLng(27.18292097,31.19726121);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:15,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
   };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
 }
+
 google.maps.event.addDomListener(window, 'load', initialize);
 </script>
+</head>
 </head>
 
 <body>
